@@ -80,16 +80,11 @@
    d = "E:/system/config/desktop/"
    h1 = [l for l in open(d + "hash.txt") if l.startswith("hash1=")][0].strip()
    h2 = "hash2=" + hashlib.md5(open(d + "view.json", "rb").read()).hexdigest()
-   body = h1 + "
-" + h2 + "
-"
-   open(d + "hash.txt", "w", newline="
-").write(body + "
-#" + format(zlib.crc32(body.encode()), "08x") + "
-")
+   body = h1 + "\n" + h2 + "\n"
+   crc = format(zlib.crc32(body.encode()), "08x")
+   open(d + "hash.txt", "w", newline="\n").write(body + "\n#" + crc + "\n")
    ```
-   (Подойдёт любой инструмент, считающий MD5 и CRC32; переводы строк в `hash.txt` — `
-`.)
+   (Подойдёт любой инструмент, считающий MD5 и CRC32; переводы строк в `hash.txt` — LF, то есть `\n`.)
 5. Перезагрузите книгу. Чтобы откатить — верните две резервные копии.
 
 Если хеш не совпадёт, книга может проигнорировать или сбросить конфигурацию рабочего стола — поэтому копии обязательны.

@@ -80,16 +80,11 @@ Back up `system/config/desktop/view.json` and `hash.txt` first.
    d = "E:/system/config/desktop/"
    h1 = [l for l in open(d + "hash.txt") if l.startswith("hash1=")][0].strip()
    h2 = "hash2=" + hashlib.md5(open(d + "view.json", "rb").read()).hexdigest()
-   body = h1 + "
-" + h2 + "
-"
-   open(d + "hash.txt", "w", newline="
-").write(body + "
-#" + format(zlib.crc32(body.encode()), "08x") + "
-")
+   body = h1 + "\n" + h2 + "\n"
+   crc = format(zlib.crc32(body.encode()), "08x")
+   open(d + "hash.txt", "w", newline="\n").write(body + "\n#" + crc + "\n")
    ```
-   (Any tool that computes MD5 and CRC32 works; line endings in `hash.txt` are `
-`.)
+   (Any tool that computes MD5 and CRC32 works; line endings in `hash.txt` are LF, i.e. `\n`.)
 5. Reboot the book. To undo, restore the two backup files.
 
 If the hash does not match, the book may ignore or reset the desktop configuration — that is why the backups matter.
