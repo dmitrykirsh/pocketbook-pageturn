@@ -39,6 +39,48 @@
 
 5. *(По желанию, Windows)* иконка PageTurn в меню приложений: при подключённой книге запустите `add-icon.ps1` из релиза (правый клик → «Выполнить с помощью PowerShell» или `powershell -ExecutionPolicy Bypass -File add-icon.ps1`). Без него приложение работает и показывается со стандартным значком. Скрипт делает копии `view.json` и `hash.txt`, правит их и при любой ошибке возвращает оригиналы; `-Remove` откатывает изменения. **Проверено только на PocketBook 629 — на свой риск.** После этого перезагрузите книгу.
 
+### Добавление иконки вручную (без скрипта)
+
+Сначала сделайте копии `system/config/desktop/view.json` и `hash.txt`.
+
+1. В `view.json` внутри блока `"applications": {` добавьте первой записью:
+   ```json
+   "U_pageturn": {
+       "focused_icon": { "path": "system/pageturn/icons/desktop_app_pageturn_f.bmp" },
+       "icon":         { "path": "system/pageturn/icons/desktop_app_pageturn.bmp" },
+       "path": "/mnt/ext1/applications/PageTurn.app",
+       "title": "PageTurn"
+   },
+   ```
+2. В этом же файле добавьте `"U_pageturn"` в список `"apps"` группы `"@General"` (не забудьте запятую после предыдущего элемента).
+3. Убедитесь, что JSON остался корректным (например, вставьте файл в любой JSON-валидатор).
+4. Обновите `hash.txt`. Формат:
+   ```
+   hash1=<не меняется>
+   hash2=<MD5 от view.json, строчные hex>
+
+   #<CRC32 первых двух строк, 8 строчных hex-цифр>
+   ```
+   `hash1` оставьте как есть. Новые значения можно посчитать, например, на Python:
+   ```python
+   import hashlib, zlib
+   d = "E:/system/config/desktop/"
+   h1 = [l for l in open(d + "hash.txt") if l.startswith("hash1=")][0].strip()
+   h2 = "hash2=" + hashlib.md5(open(d + "view.json", "rb").read()).hexdigest()
+   body = h1 + "
+" + h2 + "
+"
+   open(d + "hash.txt", "w", newline="
+").write(body + "
+#" + format(zlib.crc32(body.encode()), "08x") + "
+")
+   ```
+   (Подойдёт любой инструмент, считающий MD5 и CRC32; переводы строк в `hash.txt` — `
+`.)
+5. Перезагрузите книгу. Чтобы откатить — верните две резервные копии.
+
+Если хеш не совпадёт, книга может проигнорировать или сбросить конфигурацию рабочего стола — поэтому копии обязательны.
+
 ### На телефоне
 
 1. Установите `PageTurnRemote-*.apk` (нужно разрешить установку из неизвестных источников; APK подписан отладочным ключом).

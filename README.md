@@ -39,6 +39,48 @@ No libraries need to be copied: the launcher uses the firmware's own libraries f
 
 5. *(Optional, Windows)* get the PageTurn icon in the application menu: with the book still connected, run `add-icon.ps1` from the release (right-click → Run with PowerShell, or `powershell -ExecutionPolicy Bypass -File add-icon.ps1`). Without it the app still works and is listed with a default icon. The script backs up `view.json` and `hash.txt`, edits them, and restores the originals on any error; `-Remove` undoes it. **Tested only on the PocketBook 629 — use at your own risk.** Reboot the book afterwards.
 
+### Adding the icon manually (without the script)
+
+Back up `system/config/desktop/view.json` and `hash.txt` first.
+
+1. In `view.json`, inside the `"applications": {` block, add as the first entry:
+   ```json
+   "U_pageturn": {
+       "focused_icon": { "path": "system/pageturn/icons/desktop_app_pageturn_f.bmp" },
+       "icon":         { "path": "system/pageturn/icons/desktop_app_pageturn.bmp" },
+       "path": "/mnt/ext1/applications/PageTurn.app",
+       "title": "PageTurn"
+   },
+   ```
+2. In the same file, add `"U_pageturn"` to the `"apps"` list of the `"@General"` group (mind the comma after the previous item).
+3. Make sure the file is still valid JSON (e.g. paste it into any JSON validator).
+4. Update `hash.txt`. It has the form:
+   ```
+   hash1=<unchanged>
+   hash2=<MD5 of view.json, lowercase hex>
+
+   #<CRC32 of the first two lines, 8 lowercase hex digits>
+   ```
+   Keep `hash1` as is. Compute the new values, for example with Python:
+   ```python
+   import hashlib, zlib
+   d = "E:/system/config/desktop/"
+   h1 = [l for l in open(d + "hash.txt") if l.startswith("hash1=")][0].strip()
+   h2 = "hash2=" + hashlib.md5(open(d + "view.json", "rb").read()).hexdigest()
+   body = h1 + "
+" + h2 + "
+"
+   open(d + "hash.txt", "w", newline="
+").write(body + "
+#" + format(zlib.crc32(body.encode()), "08x") + "
+")
+   ```
+   (Any tool that computes MD5 and CRC32 works; line endings in `hash.txt` are `
+`.)
+5. Reboot the book. To undo, restore the two backup files.
+
+If the hash does not match, the book may ignore or reset the desktop configuration — that is why the backups matter.
+
 ### On the phone
 
 1. Install `PageTurnRemote-*.apk` (allow installs from unknown sources; the APK is signed with a debug key).
