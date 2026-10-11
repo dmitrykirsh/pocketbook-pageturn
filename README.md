@@ -4,6 +4,12 @@
 
 Turn pages in the **stock PocketBook reader** (pbreader) with the volume keys of an Android phone — even with the phone's screen off. No Bluetooth, no firmware changes, no KOReader.
 
+<p align="center">
+  <img src="docs/book-screen.png" alt="The book-side screen" width="320">
+  &nbsp;&nbsp;
+  <img src="docs/phone-app.webp" alt="The Android app" width="190">
+</p>
+
 | Part | What it does |
 |---|---|
 | **PageTurn (book)** | A small server on the book receives UDP `next` / `prev` commands and injects hardware key presses into the reader via the official InkView SDK. Also a book-side screen showing IP, port, PIN and a QR code. |
