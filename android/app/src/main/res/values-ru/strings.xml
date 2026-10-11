@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PageTurn</string>
+    <string name="a11y_desc">Перехватывает кнопки громкости и отправляет команды листания на электронную книгу PocketBook по Wi-Fi, но только пока включён «Режим чтения». Содержимое экрана не читается.</string>
+    <string name="main_subtitle">Листайте книгу PocketBook кнопками громкости телефона</string>
+
+    <string name="reading_title">Режим чтения</string>
+    <string name="reading_on">Включён — кнопки громкости листают книгу</string>
+    <string name="reading_off">Выключен — громкость работает как обычно</string>
+    <string name="reading_auto_off">Автоотключение через %1$s</string>
+    <string name="dark_btn">🌑  Тёмный экран (кнопки работают всегда)</string>
+    <string name="dark_exit_hint">Чтобы вернуть экран, подержите палец на нём 2 секунды.</string>
+
+    <string name="conn_title">Подключение к книге</string>
+    <string name="find_btn">Найти мою книгу</string>
+    <string name="scan_btn">Сканировать QR</string>
+    <string name="scan_prompt">Наведите камеру на QR-код на книге</string>
+    <string name="scan_bad">Это не QR-код PageTurn</string>
+    <string name="connecting">Подключаюсь…</string>
+    <string name="connected_fmt">Подключено к %1$s ✓</string>
+    <string name="connect_failed">Настройки сохранены, но книга не ответила. Проверьте Wi-Fi и PIN.</string>
+    <string name="searching">Ищу…</string>
+    <string name="found_fmt">Найдена: %1$s</string>
+    <string name="found_many_fmt">Найдено книг: %1$d, использую %2$s</string>
+    <string name="not_found">Книга не найдена. Убедитесь, что на книге открыто PageTurn и оба устройства в одной сети Wi-Fi.</string>
+    <string name="host_hint">Адрес книги</string>
+    <string name="host_helper">Показан в PageTurn на книге</string>
+    <string name="port_hint">Порт</string>
+    <string name="pin_hint">PIN-код</string>
+    <string name="pin_helper">Показан в PageTurn на книге</string>
+    <string name="test_prev">◀  Назад</string>
+    <string name="test_next">Вперёд  ▶</string>
+    <string name="test_hint">Проверка связи: нажмите одну из кнопок</string>
+    <string name="sending">Отправляю…</string>
+    <string name="sent_fmt">Отправлено: %1$s</string>
+    <string name="send_error_fmt">Ошибка: %1$s</string>
+    <string name="no_host">Адрес книги не задан</string>
+
+    <string name="vol_title">Кнопки громкости</string>
+    <string name="vol_up">Громкость +</string>
+    <string name="vol_down">Громкость −</string>
+    <string name="vol_swap">⇅  Поменять местами</string>
+    <string name="act_next">Вперёд</string>
+    <string name="act_prev">Назад</string>
+    <string name="act_none">Ничего</string>
+
+    <string name="auto_title">Автоотключение</string>
+    <string name="auto_hint">Выключать режим чтения после бездействия</string>
+    <string name="auto_helper">Чтобы громкость не оставалась занятой, если забыли выключить</string>
+    <string name="auto_15">15 минут</string>
+    <string name="auto_30">30 минут</string>
+    <string name="auto_60">1 час</string>
+    <string name="auto_120">2 часа</string>
+    <string name="auto_never">Никогда</string>
+    <string name="left_min_fmt">%1$d мин</string>
+    <string name="left_hm_fmt">%1$d ч %2$d мин</string>
+
+    <string name="screen_title">Погашенный экран (настройка)</string>
+    <string name="audio_switch">Бесшумный аудиопоток</string>
+    <string name="audio_hint">Нужен для работы при выключенном экране: система считает, что играет музыка, а приложение ловит изменение громкости и возвращает её на место. На время режима чтения громкость медиа ставится на середину, после выключения возвращается.</string>
+    <string name="keep_switch">Не гасить экран (тусклый)</string>
+    <string name="keep_hint">Запасной вариант: пока режим чтения включён, экран остаётся включённым, и кнопки ловит служба спец. возможностей. Тратит батарею.</string>
+
+    <string name="a11y_title">Служба спец. возможностей</string>
+    <string name="a11y_on">✓  Включена</string>
+    <string name="a11y_off">Выключена — включите PageTurn в системных настройках</string>
+    <string name="a11y_hint">Нужна, чтобы кнопки работали и на экране блокировки при включённом экране. Перехватывает громкость только в режиме чтения.</string>
+    <string name="a11y_btn">Открыть настройки спец. возможностей</string>
+
+    <string name="theme_title">Оформление</string>
+    <string name="theme_system">Системная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+
+    <string name="log_title">Журнал событий</string>
+    <string name="log_hint">Для диагностики: что происходит, когда экран телефона выключен</string>
+    <string name="log_empty">(пока пусто)</string>
+    <string name="log_clear">Очистить</string>
+    <string name="log_copy">Копировать</string>
+    <string name="log_copied">Журнал скопирован в буфер обмена</string>
+
+    <string name="notif_channel">Режим чтения</string>
+    <string name="notif_title">Режим чтения включён</string>
+    <string name="notif_text">Громкость листает книгу</string>
+    <string name="notif_text_auto">Громкость листает книгу · автоотключение через %1$d мин бездействия</string>
+    <string name="notif_dark">Тёмный экран</string>
+    <string name="notif_stop">Остановить</string>
+    <string name="tile_label">Листание книги</string>
+    <string name="dark_hint">Тёмный экран\nКнопки громкости листают книгу\n\nЧтобы выйти — удерживайте палец 2 секунды</string>
+</resources>

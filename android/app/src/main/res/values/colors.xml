@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Светлая палитра (бирюзовая) -->
+    <color name="pt_primary">#006874</color>
+    <color name="pt_on_primary">#FFFFFF</color>
+    <color name="pt_primary_container">#97F0FF</color>
+    <color name="pt_on_primary_container">#001F24</color>
+    <color name="pt_secondary">#4A6267</color>
+    <color name="pt_on_secondary">#FFFFFF</color>
+    <color name="pt_secondary_container">#CDE7EC</color>
+    <color name="pt_on_secondary_container">#051F23</color>
+    <color name="pt_surface">#F5FAFB</color>
+    <color name="pt_on_surface">#171D1E</color>
+    <color name="pt_surface_variant">#DBE4E6</color>
+    <color name="pt_on_surface_variant">#3F484A</color>
+    <color name="pt_outline">#6F797A</color>
+    <color name="pt_outline_variant">#BFC8CA</color>
+    <color name="pt_container_lowest">#FFFFFF</color>
+    <color name="pt_container_low">#EFF5F6</color>
+    <color name="pt_container">#E9EFF0</color>
+    <color name="pt_container_high">#E3E9EA</color>
+    <color name="pt_container_highest">#DEE3E5</color>
+    <color name="ic_launcher_background">#1D1E22</color>
+</resources>

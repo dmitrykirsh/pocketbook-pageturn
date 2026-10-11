@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PageTurn</string>
+    <string name="a11y_desc">Intercepts the volume buttons and sends page-turn commands to your PocketBook e-reader over Wi-Fi, only while Reading mode is on. It does not read the screen content.</string>
+    <string name="main_subtitle">Turn pages on your PocketBook with your phone\'s volume buttons</string>
+
+    <string name="reading_title">Reading mode</string>
+    <string name="reading_on">On — volume buttons turn pages</string>
+    <string name="reading_off">Off — volume works as usual</string>
+    <string name="reading_auto_off">Auto-off in %1$s</string>
+    <string name="dark_btn">🌑  Dark screen (buttons always work)</string>
+    <string name="dark_exit_hint">To bring the screen back, hold your finger on it for 2 seconds.</string>
+
+    <string name="conn_title">Connection to the book</string>
+    <string name="find_btn">Find my book</string>
+    <string name="scan_btn">Scan QR</string>
+    <string name="scan_prompt">Point the camera at the QR code on the book</string>
+    <string name="scan_bad">This is not a PageTurn QR code</string>
+    <string name="connecting">Connecting…</string>
+    <string name="connected_fmt">Connected to %1$s ✓</string>
+    <string name="connect_failed">Settings saved, but the book did not answer. Check Wi-Fi and the PIN.</string>
+    <string name="searching">Searching…</string>
+    <string name="found_fmt">Found: %1$s</string>
+    <string name="found_many_fmt">Found %1$d books, using %2$s</string>
+    <string name="not_found">Book not found. Make sure PageTurn is open on the book and both devices are on the same Wi-Fi.</string>
+    <string name="host_hint">Book address</string>
+    <string name="host_helper">Shown in PageTurn on the book</string>
+    <string name="port_hint">Port</string>
+    <string name="pin_hint">PIN</string>
+    <string name="pin_helper">Shown in PageTurn on the book</string>
+    <string name="test_prev">◀  Back</string>
+    <string name="test_next">Next  ▶</string>
+    <string name="test_hint">Tap a button to test the connection</string>
+    <string name="sending">Sending…</string>
+    <string name="sent_fmt">Sent: %1$s</string>
+    <string name="send_error_fmt">Error: %1$s</string>
+    <string name="no_host">Book address is not set</string>
+
+    <string name="vol_title">Volume buttons</string>
+    <string name="vol_up">Volume +</string>
+    <string name="vol_down">Volume −</string>
+    <string name="vol_swap">⇅  Swap</string>
+    <string name="act_next">Next page</string>
+    <string name="act_prev">Previous page</string>
+    <string name="act_none">Nothing</string>
+
+    <string name="auto_title">Auto-off</string>
+    <string name="auto_hint">Turn Reading mode off after inactivity</string>
+    <string name="auto_helper">So the volume keys are not left taken if you forget</string>
+    <string name="auto_15">15 minutes</string>
+    <string name="auto_30">30 minutes</string>
+    <string name="auto_60">1 hour</string>
+    <string name="auto_120">2 hours</string>
+    <string name="auto_never">Never</string>
+    <string name="left_min_fmt">%1$d min</string>
+    <string name="left_hm_fmt">%1$d h %2$d min</string>
+
+    <string name="screen_title">Screen off (advanced)</string>
+    <string name="audio_switch">Silent audio stream</string>
+    <string name="audio_hint">Needed for use with the screen off: the system thinks music is playing and the app catches the volume change, then puts the volume back. During Reading mode the media volume is set to the middle and restored afterwards.</string>
+    <string name="keep_switch">Keep screen on (dim)</string>
+    <string name="keep_hint">Fallback: the screen stays on while Reading mode is on and the accessibility service catches the keys. Uses battery.</string>
+
+    <string name="a11y_title">Accessibility service</string>
+    <string name="a11y_on">✓  Enabled</string>
+    <string name="a11y_off">Disabled — enable PageTurn in system settings</string>
+    <string name="a11y_hint">Lets the buttons work on the lock screen while the screen is on. It intercepts the volume keys only in Reading mode.</string>
+    <string name="a11y_btn">Open accessibility settings</string>
+
+    <string name="theme_title">Appearance</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <string name="log_title">Event log</string>
+    <string name="log_hint">For diagnostics: what happens when the phone screen is off</string>
+    <string name="log_empty">(empty)</string>
+    <string name="log_clear">Clear</string>
+    <string name="log_copy">Copy</string>
+    <string name="log_copied">Log copied to clipboard</string>
+
+    <string name="notif_channel">Reading mode</string>
+    <string name="notif_title">Reading mode is on</string>
+    <string name="notif_text">Volume buttons turn pages</string>
+    <string name="notif_text_auto">Volume buttons turn pages · auto-off after %1$d min of inactivity</string>
+    <string name="notif_dark">Dark screen</string>
+    <string name="notif_stop">Stop</string>
+    <string name="tile_label">Page turning</string>
+    <string name="dark_hint">Dark screen\nVolume buttons turn pages\n\nTo exit, hold your finger for 2 seconds</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PageTurn</string>
+    <string name="a11y_desc">Intercepta los botones de volumen y envía comandos para pasar de página a su lector PocketBook por Wi-Fi, solo mientras el modo lectura esté activado. No lee el contenido de la pantalla.</string>
+    <string name="main_subtitle">Pase las páginas de su PocketBook con los botones de volumen del teléfono</string>
+
+    <string name="reading_title">Modo lectura</string>
+    <string name="reading_on">Activado — los botones de volumen pasan las páginas</string>
+    <string name="reading_off">Desactivado — el volumen funciona como siempre</string>
+    <string name="reading_auto_off">Apagado automático en %1$s</string>
+    <string name="dark_btn">🌑  Pantalla oscura (los botones siempre funcionan)</string>
+    <string name="dark_exit_hint">Para recuperar la pantalla, mantenga el dedo sobre ella durante 2 segundos.</string>
+
+    <string name="conn_title">Conexión con el lector</string>
+    <string name="find_btn">Buscar mi lector</string>
+    <string name="scan_btn">Escanear QR</string>
+    <string name="scan_prompt">Apunte la cámara al código QR del lector</string>
+    <string name="scan_bad">Este no es un código QR de PageTurn</string>
+    <string name="connecting">Conectando…</string>
+    <string name="connected_fmt">Conectado a %1$s ✓</string>
+    <string name="connect_failed">Ajustes guardados, pero el lector no responde. Compruebe el Wi-Fi y el PIN.</string>
+    <string name="searching">Buscando…</string>
+    <string name="found_fmt">Encontrado: %1$s</string>
+    <string name="found_many_fmt">Encontrados %1$d lectores, se usa %2$s</string>
+    <string name="not_found">No se encontró el lector. Compruebe que PageTurn está abierto en el lector y que ambos dispositivos están en la misma red Wi-Fi.</string>
+    <string name="host_hint">Dirección del lector</string>
+    <string name="host_helper">Se muestra en PageTurn en el lector</string>
+    <string name="port_hint">Puerto</string>
+    <string name="pin_hint">PIN</string>
+    <string name="pin_helper">Se muestra en PageTurn en el lector</string>
+    <string name="test_prev">◀  Atrás</string>
+    <string name="test_next">Adelante  ▶</string>
+    <string name="test_hint">Prueba de conexión: pulse un botón</string>
+    <string name="sending">Enviando…</string>
+    <string name="sent_fmt">Enviado: %1$s</string>
+    <string name="send_error_fmt">Error: %1$s</string>
+    <string name="no_host">No se ha indicado la dirección del lector</string>
+
+    <string name="vol_title">Botones de volumen</string>
+    <string name="vol_up">Volumen +</string>
+    <string name="vol_down">Volumen −</string>
+    <string name="vol_swap">⇅  Intercambiar</string>
+    <string name="act_next">Página siguiente</string>
+    <string name="act_prev">Página anterior</string>
+    <string name="act_none">Nada</string>
+
+    <string name="auto_title">Apagado automático</string>
+    <string name="auto_hint">Desactivar el modo lectura tras un periodo de inactividad</string>
+    <string name="auto_helper">Para que las teclas de volumen no queden ocupadas si se le olvida</string>
+    <string name="auto_15">15 minutos</string>
+    <string name="auto_30">30 minutos</string>
+    <string name="auto_60">1 hora</string>
+    <string name="auto_120">2 horas</string>
+    <string name="auto_never">Nunca</string>
+    <string name="left_min_fmt">%1$d min</string>
+    <string name="left_hm_fmt">%1$d h %2$d min</string>
+
+    <string name="screen_title">Pantalla apagada (avanzado)</string>
+    <string name="audio_switch">Flujo de audio silencioso</string>
+    <string name="audio_hint">Necesario para funcionar con la pantalla apagada: el sistema cree que suena música, la aplicación detecta el cambio de volumen y lo devuelve a su sitio. Durante el modo lectura el volumen multimedia se fija en la mitad y después se restablece.</string>
+    <string name="keep_switch">Mantener la pantalla encendida (tenue)</string>
+    <string name="keep_hint">Alternativa: la pantalla permanece encendida durante el modo lectura y el servicio de accesibilidad captura las teclas. Consume batería.</string>
+
+    <string name="a11y_title">Servicio de accesibilidad</string>
+    <string name="a11y_on">✓  Activado</string>
+    <string name="a11y_off">Desactivado — active PageTurn en los ajustes del sistema</string>
+    <string name="a11y_hint">Permite que los botones funcionen en la pantalla de bloqueo mientras la pantalla está encendida. Solo intercepta el volumen en el modo lectura.</string>
+    <string name="a11y_btn">Abrir ajustes de accesibilidad</string>
+
+    <string name="theme_title">Apariencia</string>
+    <string name="theme_system">Sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+
+    <string name="log_title">Registro de eventos</string>
+    <string name="log_hint">Para diagnóstico: qué ocurre cuando la pantalla del teléfono está apagada</string>
+    <string name="log_empty">(vacío)</string>
+    <string name="log_clear">Borrar</string>
+    <string name="log_copy">Copiar</string>
+    <string name="log_copied">Registro copiado al portapapeles</string>
+
+    <string name="notif_channel">Modo lectura</string>
+    <string name="notif_title">Modo lectura activado</string>
+    <string name="notif_text">Los botones de volumen pasan las páginas</string>
+    <string name="notif_text_auto">Los botones de volumen pasan las páginas · apagado automático tras %1$d min de inactividad</string>
+    <string name="notif_dark">Pantalla oscura</string>
+    <string name="notif_stop">Detener</string>
+    <string name="tile_label">Pasar páginas</string>
+    <string name="dark_hint">Pantalla oscura\nLos botones de volumen pasan las páginas\n\nPara salir, mantenga el dedo pulsado 2 segundos</string>
+</resources>

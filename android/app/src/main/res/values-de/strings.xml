@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PageTurn</string>
+    <string name="a11y_desc">Fängt die Lautstärketasten ab und sendet Blätterbefehle per WLAN an Ihren PocketBook-E-Reader, aber nur solange der Lesemodus aktiv ist. Der Bildschirminhalt wird nicht gelesen.</string>
+    <string name="main_subtitle">Blättern Sie auf Ihrem PocketBook mit den Lautstärketasten des Telefons</string>
+
+    <string name="reading_title">Lesemodus</string>
+    <string name="reading_on">An — Lautstärketasten blättern die Seiten</string>
+    <string name="reading_off">Aus — Lautstärke funktioniert wie gewohnt</string>
+    <string name="reading_auto_off">Automatisch aus in %1$s</string>
+    <string name="dark_btn">🌑  Dunkler Bildschirm (Tasten funktionieren immer)</string>
+    <string name="dark_exit_hint">Um den Bildschirm wieder einzuschalten, halten Sie den Finger 2 Sekunden darauf.</string>
+
+    <string name="conn_title">Verbindung zum Buch</string>
+    <string name="find_btn">Mein Buch suchen</string>
+    <string name="scan_btn">QR scannen</string>
+    <string name="scan_prompt">Richten Sie die Kamera auf den QR-Code auf dem Buch</string>
+    <string name="scan_bad">Das ist kein PageTurn-QR-Code</string>
+    <string name="connecting">Verbinde…</string>
+    <string name="connected_fmt">Verbunden mit %1$s ✓</string>
+    <string name="connect_failed">Einstellungen gespeichert, aber das Buch antwortet nicht. Prüfen Sie WLAN und PIN.</string>
+    <string name="searching">Suche läuft…</string>
+    <string name="found_fmt">Gefunden: %1$s</string>
+    <string name="found_many_fmt">%1$d Bücher gefunden, verwende %2$s</string>
+    <string name="not_found">Buch nicht gefunden. Stellen Sie sicher, dass PageTurn auf dem Buch geöffnet ist und beide Geräte im selben WLAN sind.</string>
+    <string name="host_hint">Adresse des Buchs</string>
+    <string name="host_helper">Wird in PageTurn auf dem Buch angezeigt</string>
+    <string name="port_hint">Port</string>
+    <string name="pin_hint">PIN</string>
+    <string name="pin_helper">Wird in PageTurn auf dem Buch angezeigt</string>
+    <string name="test_prev">◀  Zurück</string>
+    <string name="test_next">Weiter  ▶</string>
+    <string name="test_hint">Verbindung testen: Tippen Sie auf eine Taste</string>
+    <string name="sending">Wird gesendet…</string>
+    <string name="sent_fmt">Gesendet: %1$s</string>
+    <string name="send_error_fmt">Fehler: %1$s</string>
+    <string name="no_host">Adresse des Buchs ist nicht festgelegt</string>
+
+    <string name="vol_title">Lautstärketasten</string>
+    <string name="vol_up">Lautstärke +</string>
+    <string name="vol_down">Lautstärke −</string>
+    <string name="vol_swap">⇅  Tauschen</string>
+    <string name="act_next">Nächste Seite</string>
+    <string name="act_prev">Vorherige Seite</string>
+    <string name="act_none">Nichts</string>
+
+    <string name="auto_title">Automatisches Ausschalten</string>
+    <string name="auto_hint">Lesemodus nach Inaktivität ausschalten</string>
+    <string name="auto_helper">Damit die Lautstärketasten nicht belegt bleiben, wenn Sie es vergessen</string>
+    <string name="auto_15">15 Minuten</string>
+    <string name="auto_30">30 Minuten</string>
+    <string name="auto_60">1 Stunde</string>
+    <string name="auto_120">2 Stunden</string>
+    <string name="auto_never">Nie</string>
+    <string name="left_min_fmt">%1$d Min.</string>
+    <string name="left_hm_fmt">%1$d Std. %2$d Min.</string>
+
+    <string name="screen_title">Bildschirm aus (erweitert)</string>
+    <string name="audio_switch">Stiller Audiostream</string>
+    <string name="audio_hint">Für den Betrieb bei ausgeschaltetem Bildschirm nötig: Das System glaubt, dass Musik läuft, die App erkennt die Lautstärkeänderung und stellt die Lautstärke zurück. Während des Lesemodus steht die Medienlautstärke in der Mitte und wird danach wiederhergestellt.</string>
+    <string name="keep_switch">Bildschirm anlassen (gedimmt)</string>
+    <string name="keep_hint">Ausweichlösung: Der Bildschirm bleibt im Lesemodus an, und der Bedienungshilfen-Dienst fängt die Tasten ab. Verbraucht Akku.</string>
+
+    <string name="a11y_title">Bedienungshilfen-Dienst</string>
+    <string name="a11y_on">✓  Aktiviert</string>
+    <string name="a11y_off">Deaktiviert — aktivieren Sie PageTurn in den Systemeinstellungen</string>
+    <string name="a11y_hint">Damit die Tasten auch auf dem Sperrbildschirm funktionieren, solange der Bildschirm an ist. Fängt die Lautstärketasten nur im Lesemodus ab.</string>
+    <string name="a11y_btn">Bedienungshilfen-Einstellungen öffnen</string>
+
+    <string name="theme_title">Erscheinungsbild</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Hell</string>
+    <string name="theme_dark">Dunkel</string>
+
+    <string name="log_title">Ereignisprotokoll</string>
+    <string name="log_hint">Zur Diagnose: was passiert, wenn der Telefonbildschirm aus ist</string>
+    <string name="log_empty">(leer)</string>
+    <string name="log_clear">Leeren</string>
+    <string name="log_copy">Kopieren</string>
+    <string name="log_copied">Protokoll in die Zwischenablage kopiert</string>
+
+    <string name="notif_channel">Lesemodus</string>
+    <string name="notif_title">Lesemodus ist an</string>
+    <string name="notif_text">Lautstärketasten blättern die Seiten</string>
+    <string name="notif_text_auto">Lautstärketasten blättern die Seiten · automatisch aus nach %1$d Min. Inaktivität</string>
+    <string name="notif_dark">Dunkler Bildschirm</string>
+    <string name="notif_stop">Beenden</string>
+    <string name="tile_label">Seiten blättern</string>
+    <string name="dark_hint">Dunkler Bildschirm\nLautstärketasten blättern die Seiten\n\nZum Beenden den Finger 2 Sekunden gedrückt halten</string>
+</resources>

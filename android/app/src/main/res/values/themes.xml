@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PageTurn" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pt_primary</item>
+        <item name="colorOnPrimary">@color/pt_on_primary</item>
+        <item name="colorPrimaryContainer">@color/pt_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/pt_on_primary_container</item>
+        <item name="colorSecondary">@color/pt_secondary</item>
+        <item name="colorOnSecondary">@color/pt_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/pt_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/pt_on_secondary_container</item>
+        <item name="colorSurface">@color/pt_surface</item>
+        <item name="colorOnSurface">@color/pt_on_surface</item>
+        <item name="colorSurfaceVariant">@color/pt_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/pt_on_surface_variant</item>
+        <item name="colorOutline">@color/pt_outline</item>
+        <item name="colorOutlineVariant">@color/pt_outline_variant</item>
+        <item name="colorSurfaceContainerLowest">@color/pt_container_lowest</item>
+        <item name="colorSurfaceContainerLow">@color/pt_container_low</item>
+        <item name="colorSurfaceContainer">@color/pt_container</item>
+        <item name="colorSurfaceContainerHigh">@color/pt_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/pt_container_highest</item>
+        <item name="android:colorBackground">@color/pt_surface</item>
+        <item name="android:statusBarColor">@color/pt_surface</item>
+        <item name="android:navigationBarColor">@color/pt_surface</item>
+    </style>
+
+    <style name="Theme.PageTurn.Dark" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="PT.SectionTitle" parent="">
+        <item name="android:textAppearance">?attr/textAppearanceTitleMedium</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

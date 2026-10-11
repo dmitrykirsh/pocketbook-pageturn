@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Тёмная палитра -->
+    <color name="pt_primary">#4FD8EB</color>
+    <color name="pt_on_primary">#00363D</color>
+    <color name="pt_primary_container">#004F58</color>
+    <color name="pt_on_primary_container">#97F0FF</color>
+    <color name="pt_secondary">#B1CBD0</color>
+    <color name="pt_on_secondary">#1C3438</color>
+    <color name="pt_secondary_container">#334B4F</color>
+    <color name="pt_on_secondary_container">#CDE7EC</color>
+    <color name="pt_surface">#0E1415</color>
+    <color name="pt_on_surface">#DEE3E5</color>
+    <color name="pt_surface_variant">#3F484A</color>
+    <color name="pt_on_surface_variant">#BFC8CA</color>
+    <color name="pt_outline">#899294</color>
+    <color name="pt_outline_variant">#3F484A</color>
+    <color name="pt_container_lowest">#090F10</color>
+    <color name="pt_container_low">#171D1E</color>
+    <color name="pt_container">#1B2122</color>
+    <color name="pt_container_high">#252B2C</color>
+    <color name="pt_container_highest">#303637</color>
+</resources>

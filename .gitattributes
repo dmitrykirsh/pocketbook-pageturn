@@ -1,0 +1,7 @@
+* text=auto
+*.app text eol=lf
+*.sh text eol=lf
+*.bmp binary
+*.png binary
+*.jar binary
+book/bin/* binary
