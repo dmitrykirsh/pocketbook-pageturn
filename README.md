@@ -33,11 +33,11 @@ Download `PageTurn-book-*.zip` and `PageTurnRemote-*.apk` from [Releases](../../
 1. Connect the book to your computer over USB (storage mode).
 2. Extract `PageTurn-book-*.zip` **into the root of the book's drive** — you get `applications/PageTurn.app` and `system/pageturn/…`.
 3. *(Recommended)* make `system/pageturn` hidden + system so its files don't show up in the library as "books". On Windows: `attrib +h +s system\pageturn`.
-4. Disconnect. **PageTurn** appears in the Applications menu.
+4. Disconnect (or do step 5 first). **PageTurn** appears in the Applications menu.
 
 No libraries need to be copied: the launcher uses the firmware's own libraries from `/ebrmain/lib`.
 
-> A home-screen icon is optional and has to be added by hand to `system/config/desktop/view.json` (plus recomputing `hash.txt`). The author did this but does not ship it: a mistake can break the desktop. Launching from the Applications menu works without it.
+5. *(Optional, Windows)* get the PageTurn icon in the application menu: with the book still connected, run `add-icon.ps1` from the release (right-click → Run with PowerShell, or `powershell -ExecutionPolicy Bypass -File add-icon.ps1`). Without it the app still works and is listed with a default icon. The script backs up `view.json` and `hash.txt`, edits them, and restores the originals on any error; `-Remove` undoes it. **Tested only on the PocketBook 629 — use at your own risk.** Reboot the book afterwards.
 
 ### On the phone
 
@@ -101,7 +101,7 @@ Note: the book is soft-float EABI5 while the toolchain is hard-float, so the ELF
 
 ## Uninstall
 
-Delete `applications/PageTurn.app` and `system/pageturn` from the book and reboot it. On the phone, disable the accessibility service and uninstall the app.
+Run `add-icon.ps1 -Remove` if you used it, then delete `applications/PageTurn.app` and `system/pageturn` from the book and reboot it. On the phone, disable the accessibility service and uninstall the app.
 
 ## License and disclaimer
 
