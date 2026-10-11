@@ -1,5 +1,9 @@
 # PageTurn — turn PocketBook pages from your Android phone over Wi-Fi
 
+[![GitHub release](https://img.shields.io/github/v/release/dmitrykirsh/pocketbook-pageturn?label=release)](https://github.com/dmitrykirsh/pocketbook-pageturn/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/dmitrykirsh/pocketbook-pageturn/total)](https://github.com/dmitrykirsh/pocketbook-pageturn/releases)
+[![Stars](https://img.shields.io/github/stars/dmitrykirsh/pocketbook-pageturn?style=social)](https://github.com/dmitrykirsh/pocketbook-pageturn)
+
 **English** · [Русский](README.ru.md)
 
 Turn pages in the **stock PocketBook reader** (pbreader) with the volume keys of an Android phone — even with the phone's screen off. No Bluetooth, no firmware changes, no KOReader.

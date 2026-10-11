@@ -1,5 +1,9 @@
 # PageTurn — листание страниц PocketBook с телефона по Wi-Fi
 
+[![GitHub release](https://img.shields.io/github/v/release/dmitrykirsh/pocketbook-pageturn?label=release)](https://github.com/dmitrykirsh/pocketbook-pageturn/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/dmitrykirsh/pocketbook-pageturn/total)](https://github.com/dmitrykirsh/pocketbook-pageturn/releases)
+[![Stars](https://img.shields.io/github/stars/dmitrykirsh/pocketbook-pageturn?style=social)](https://github.com/dmitrykirsh/pocketbook-pageturn)
+
 [English](README.md) · **Русский**
 
 Позволяет листать страницы в **штатной читалке PocketBook** (pbreader) кнопками громкости Android-телефона — в том числе с погашенным экраном. Без Bluetooth, без замены прошивки и без KOReader.
