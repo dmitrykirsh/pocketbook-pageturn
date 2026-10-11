@@ -40,14 +40,17 @@ Download `PageTurn-book-*.zip` and `PageTurnRemote-*.apk` from [Releases](../../
 
 ### On the book
 
-1. Connect the book to your computer over USB (storage mode).
-2. Extract `PageTurn-book-*.zip` **into the root of the book's drive** — you get `applications/PageTurn.app` and `system/pageturn/…`.
-3. *(Recommended)* make `system/pageturn` hidden + system so its files don't show up in the library as "books". On Windows: `attrib +h +s system\pageturn`.
-4. Disconnect (or do step 5 first). **PageTurn** appears in the Applications menu.
+1. Connect the book to your computer with a USB cable and, if the book asks, choose the mode that shows it as a drive ("Connect to PC"). It appears as a removable drive, for example `E:`.
+2. Unpack `PageTurn-book-*.zip` **into the root of that drive** (the drive itself, not a subfolder). In Windows: right-click the zip → *Extract All…* → set the destination to `E:\` (7-Zip: *Extract to…* → `E:\`). The zip contains two folders, `applications` and `system`; they merge into the folders that already exist on the book. If Windows asks about merging folders, say yes — no existing files of the book are overwritten.
+3. Check the result. **The `system` folder is hidden by default**, so you will not see it in the root of the drive. Either enable *View → Show → Hidden items* in Explorer, or just type the path into the Explorer address bar: `E:\system\pageturn` and press Enter. You should see `pageturn`, `pageturn-ui` and an `icons` folder there. The file `E:\applications\PageTurn.app` should exist too.
+4. *(Recommended)* hide the PageTurn folder so its files never show up in the book's library as "books". Open PowerShell or Command Prompt and run (replace `E:` with your drive letter):
+   ```
+   attrib +h +s E:\system\pageturn
+   ```
+   After this the folder stays invisible even with "Show hidden items" on (system files remain hidden); you can still open it by typing `E:\system\pageturn` into the address bar. On macOS/Linux this step is not available.
+5. Safely eject the drive and unplug the cable. **PageTurn** appears in the book's Applications menu. Run it once to start the server.
 
-No libraries need to be copied: the launcher uses the firmware's own libraries from `/ebrmain/lib`.
-
-5. *(Optional, Windows)* get the PageTurn icon in the application menu: with the book still connected, run `add-icon.ps1` from the release (right-click → Run with PowerShell, or `powershell -ExecutionPolicy Bypass -File add-icon.ps1`). Without it the app still works and is listed with a default icon. The script backs up `view.json` and `hash.txt`, edits them, and restores the originals on any error; `-Remove` undoes it. **Tested only on the PocketBook 629 — use at your own risk.** Reboot the book afterwards.
+*(Optional, Windows)* To get the PageTurn icon in the application menu, run `add-icon.ps1` from the release **before** you unplug the book (right-click → Run with PowerShell, or `powershell -ExecutionPolicy Bypass -File add-icon.ps1`). Without it the app still works and is listed with a default icon. The script backs up `view.json` and `hash.txt`, edits them, and restores the originals on any error; `-Remove` undoes it. **Tested only on the PocketBook 629 — use at your own risk.** Reboot the book afterwards.
 
 ### Adding the icon manually (without the script)
 
